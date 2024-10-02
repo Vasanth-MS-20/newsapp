@@ -18,7 +18,7 @@ const Content = React.memo(({category, set}) => {
                     setError(true)
                 }
                 const resData = await response.json()
-                if(resData.totalResults == 0){
+                if(resData.totalResults === 0){
                     setError(true)
                 }
                 const {articles} = resData

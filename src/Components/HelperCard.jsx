@@ -17,7 +17,7 @@ const HelperCard = ({ imgUrl, title, des, srcName, url, pAt }) => {
                             : "Sorry!.. Title of the news is not available right now"}
                     </Card.Title>
                     <Card.Text>
-                        {des && des != "[Removed]"
+                        {des && des !== "[Removed]"
                             ? des.slice(0, 50)
                             : "Sorry!.. Description of the news is not available right now"}
                     </Card.Text>
